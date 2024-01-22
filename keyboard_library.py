@@ -1,4 +1,6 @@
 # keyboard_library.py
+import board
+import digitalio
 from adafruit_hid.keyboard import Keyboard
 from adafruit_hid.keycode import Keycode
 import time
@@ -35,18 +37,37 @@ def handle_multitap_a(keyboard, key_state):
 
 # Example layers
 LAYER_LEFT = {
-    0: 'A', 1: 'B', 2: 'C', 3: 'D', 4: 'E', 5: 'F',
+    0: 'A',
+    1: 'B',
+    2: 'C',
+    3: 'D',
+    4: 'E',
+    5: 'F',
     # Add more keys as needed
 }
 
 LAYER_RIGHT = {
-    0: '5', 1: '6', 2: '7', 3: '8', 4: '9', 5: '0',
+    0: '5',
+    1: '6',
+    2: '7',
+    3: '8',
+    4: '9',
+    5: '0',
     # Add more keys as needed
 }
 
 LAYER_CENTER = {
-    0: '!', 1: '@', 2: '#', 3: '$', 4: '%', 5: '^',
+    0: '!',
+    1: '@',
+    2: '#',
+    3: '$',
+    4: '%',
+    5: '^',
     # Add more keys as needed
 }
 
 # Add more layers as needed
+
+# Initialize KeyboardManager with the default configuration file
+keyboard_manager = KeyboardManager()
+
