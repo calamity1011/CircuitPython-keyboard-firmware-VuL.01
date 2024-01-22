@@ -58,5 +58,9 @@ Code Organization:
 The firmware and GUI codes are separate and should be run independently. 
 The GUI code generates a configuration file (config.txt) that the firmware reads at startup.
 
+# Keyboard_library.py 
+ library contains a KeyboardManager class that has a process_key method to handle key processing with layers and multitap support. 
+It also includes example multitap functions (handle_multitap_a) and predefined layers (LAYER_LEFT, LAYER_RIGHT, LAYER_CENTER). 
+You can customize and extend these layers and multitap functions based on your needs.
 
 Feel free to adapt and modify the code as needed for your specific requirements and hardware configurations.
