@@ -1,0 +1,7 @@
+# The GUI saves the selected configuration to this config file, which the firmware loads on startup.
+{
+    "input_pins": [board.D1, board.D2, board.D3, board.D4, board.D5, board.D6],
+    "output_pins": [board.D7, board.D8, board.D9, board.D10, board.D11],
+    "spi_pins": [board.D12, board.D13, board.D14, board.D15],
+    "layout": "left"
+}
